@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sulraprdevspaces 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sulraprdevspaces
+  template:
+    metadata:
+      labels:
+        app: sulraprdevspaces 
+    spec:
+      containers:
+        - name: sulraprdevspaces 
+          image: datarepormunozva.azurecr.io/sulraprdevspaces
+          ports:
+          - containerPort: 80
