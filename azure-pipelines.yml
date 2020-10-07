@@ -77,4 +77,3 @@ stages:
               chartType: 'Name'
               chartName: 'webfrontend/Chart.yaml'
               chartVersion: 'v2'
-              recreate: true
